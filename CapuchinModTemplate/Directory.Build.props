@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<PropertyGroup>
+		<GamePath>C:\Program Files (x86)\Steam\steamapps\common\Capuchin</GamePath>
+		<GameAssemblyPath>$(GamePath)\MelonLoader\Il2CppAssemblies</GameAssemblyPath>
+		<BepInExAssemblyPath>$(GamePath)\MelonLoader\net6</BepInExAssemblyPath>
+		<PluginsPath>$(GamePath)\Mods</PluginsPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(CI)'=='TRUE'">
+		<GameAssemblyPath>.\Libs</GameAssemblyPath>
+		<BepInExAssemblyPath>.\Libs</BepInExAssemblyPath>
+		<PluginsPath>.\Libs</PluginsPath>
+		<WarningLevel>0</WarningLevel>
+	</PropertyGroup>
+</Project>
